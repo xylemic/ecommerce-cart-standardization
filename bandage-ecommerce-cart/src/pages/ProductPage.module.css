@@ -1,0 +1,91 @@
+.productPage {
+  padding: 24px 16px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--color-text-secondary);
+}
+
+.productImages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.brand {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.priceContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.originalPrice {
+  font-size: 14px;
+  color: var(--color-regular-price);
+  text-decoration: line-through;
+}
+
+.discountedPrice {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-sale);
+}
+
+.description {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.addToCartButton {
+  flex: 1;
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+

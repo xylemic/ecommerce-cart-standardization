@@ -1,0 +1,266 @@
+.homePage {
+  padding-bottom: 40px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--color-text-secondary);
+}
+
+.apiWarning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+  padding: 12px 16px;
+  margin: 16px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.categorySection {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.productsSection,
+.servicesSection,
+.blogSection,
+.testimonialsSection {
+  padding: 40px 16px;
+}
+
+.ctaSection {
+  background-color: #f9f8f8;
+  padding: 40px 16px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sectionOverline {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.sectionSubtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.productsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.loadMoreButton {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.featuresGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blogGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonialContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.galleryItem {
+  width: 100%;
+  position: relative;
+  padding-bottom: 100%; 
+  overflow: hidden;
+}
+
+.galleryItem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ctaContent {
+  text-align: center;
+}
+
+.ctaOverline {
+  font-size: 14px;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.ctaTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaPrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-sale);
+  margin-bottom: 16px;
+}
+
+.ctaDescription {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* desktop responsive styles */
+@media (min-width: 768px) {
+  .categorySection {
+    padding: 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .productsSection,
+  .servicesSection,
+  .blogSection,
+  .testimonialsSection {
+    padding: 80px 80px;
+  }
+
+  .ctaSection {
+    padding: 80px 80px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 48px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+    max-width: 400px;
+  }
+
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+
+  .blogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .testimonialsSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .testimonialContainer {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .ctaTitle {
+    font-size: 48px;
+    max-width: 600px;
+  }
+
+  .ctaDescription {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .categorySection,
+  .productsSection,
+  .servicesSection,
+  .blogSection,
+  .testimonialsSection,
+  .ctaSection {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

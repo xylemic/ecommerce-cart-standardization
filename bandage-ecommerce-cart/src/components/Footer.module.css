@@ -1,0 +1,153 @@
+.footer {
+  background-color: var(--color-white);
+  padding-top: 40px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.linksSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.linksSectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.subscribeSection {
+  margin-bottom: 40px;
+}
+
+.subscribeTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.subscribeForm {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid var(--color-light-gray);
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.subscribeButton {
+  padding: 15px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subscribeNote {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.copyright {
+  text-align: center;
+  padding: 24px 0;
+  border-top: 1px solid var(--color-light-gray);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* desktop responsive styles */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .branding {
+    margin-bottom: 0;
+  }
+
+  .linksContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 0;
+  }
+
+  .subscribeSection {
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 120px;
+  }
+}

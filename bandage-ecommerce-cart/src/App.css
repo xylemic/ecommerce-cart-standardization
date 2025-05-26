@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #23a6f0;
+  --color-secondary: #23856d;
+  --color-text-primary: #252b42;
+  --color-text-secondary: #737373;
+  --color-light-background: #fafafa;
+  --color-light-gray: #ececec;
+  --color-white: #ffffff;
+  --color-sale: #23856d;
+  --color-regular-price: #bdbdbd;
+
+  --font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  padding: 0 16px;
+  max-width: 100%;
+  margin: 0 auto;
+}
