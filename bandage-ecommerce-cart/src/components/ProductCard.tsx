@@ -1,7 +1,5 @@
 import type React from "react"
 import { Link } from "react-router-dom"
-import { useDispatch } from "react-redux"
-import { addToCart } from "../store/slices/cartSlice"
 import type { Product } from "../store/services/productsApi"
 import styles from "./ProductCard.module.css"
 
@@ -10,12 +8,6 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-  const dispatch = useDispatch()
-
-  const handleAddToCart = () => {
-    dispatch(addToCart(product))
-  }
-
   // calculate discounted price
   const discountedPrice = product.price * (1 - product.discountPercentage / 100)
 
